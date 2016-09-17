@@ -9,20 +9,26 @@
     </style>
 </head>
 <body>
-    <div id="header">
-        <h1>Chris Anderson</h1><br>
-        <h2>Software Engineer</h2>
-    </div>
-    <hr/>
+    <div id="column-wrapper">
+        <div id="header">
+            <h1><a href="index.html">Chris Anderson</a></h1><br>
+            <h2>Software Engineer</h2>
+        </div>
+        <hr/>
 
-    <h3>
-        <a href="/resume.html">Resume</a>
-    </h3>
-    <h3>
-        <a href="/bio.html">Bio</a>
-    </h3>
-    <p>
-        <img src="resources/images/portrait.jpg" alt="Portrait"/>
-    </p>
+        <div class="column" id="left-column">
+            <h3>
+                <a href="/resume.html">Resume</a>
+            </h3>
+            <h3>
+                <a href="/bio.html">Bio</a>
+            </h3>
+        </div>
+        <div class="column">
+            <p>
+                <img id="portrait-image" src="resources/images/portrait.jpg" alt="Portrait"/>
+            </p>
+        </div>
+    </div>
 </body>
 </html>

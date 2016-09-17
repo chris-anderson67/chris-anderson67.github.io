@@ -7,6 +7,13 @@ body {
   background-size: cover;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 a:visited {
     color: white;
 }
@@ -19,6 +26,34 @@ h1 {
     font-size: 50px;
 }
 
+h3 {
+    font-size: 50px;
+    padding-top: 80px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 #header {
     text-align: right;
+}
+
+#column-wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#column-wrapper .column {
+    float: left;
+    margin: 0;
+    width: 50%;
+}
+
+#portrait-image {
+    width: auto;
+    height: auto;
 }
