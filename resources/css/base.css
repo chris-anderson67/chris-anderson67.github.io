@@ -37,7 +37,7 @@ h3 {
 .header {
     text-align: right;
 }
-#page-wrapper {
+.page-wrapper {
     margin: 0 auto;
     width: 75%;
 }
