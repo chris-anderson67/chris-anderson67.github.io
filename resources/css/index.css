@@ -2,18 +2,33 @@
  * Chris Anderson
  */
 
-
-/* render in two columns for wide screens */
-.column-wrapper {
+ .column-wrapper {
   margin: 0 auto;
   padding: 20px;
   max-width: 95%;
   padding-bottom: 20px;
 }
+
 #left-column {
-    text-align: center;
+  text-align: center;
 }
+#left-column h3 {
+  border: 2px; 
+  border-radius: 3px;
+  border-style: solid;
+  border-color: white;
+}
+
+/* render in two columns for wide screens */
 @media all and (min-width: 769px) {
+  button {
+    font-size: 35px;
+  }
+  #page-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
   #left-column {
     float: left;
     padding: 20px;
@@ -27,24 +42,35 @@
     text-align: center;
   }
 }
-.link-wrapper {
-    padding: 50px;
+
+/* Limit page width on super large screens */
+@media all and (min-width: 1555px) {
+  .page-wrapper {
+    width: 60%; 
+  }
+
 }
+
+.link-wrapper {
+  padding: 50px;
+}
+
 /* portrait.jpg responsive */
 .portrait-wrapper {
-    max-width: 90%;
-    height: auto;
-    position: relative;
-    display: block;
-    margin: 0 auto;
+  max-width: 90%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
+
 .portrait-wrapper img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    max-width: 100% !important;
-    padding-bottom: 50px;
-    min-height: 50px;
-    height: auto;
-    display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  max-width: 95% !important;
+  padding-bottom: 50px;
+  min-height: 50px;
+  height: auto;
+  display: block;
 }

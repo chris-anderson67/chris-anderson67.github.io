@@ -3,6 +3,17 @@
   box-sizing: border-box;
 }
 
+.page-wrapper {
+    margin: 0 auto;
+    width: 75%;
+}
+
+@media all and (min-width: 1555px) {
+  .page-wrapper {
+    width: 60%; 
+  }
+}
+
 body {
   padding-top: 80px;
   text-align: center;
@@ -29,15 +40,46 @@ h1, h2, h3 {
 h1 {
     font-size: 50px;
 }
-h3 {
-    font-size: 35px;
-    padding-top: 10px;
+
+
+
+button {
+    color: #e1e1e1;
+    background-color: #303030;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px;
+    border-style: solid;
+    border-color: #e1e1e1;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600;
+
+}
+button:focus {
+  outline: 0;
+}
+button:hover {
+  background-color: #191919;
+}
+
+form {
+  display: inline;
+}
+#back_button {
+  float: left;
+  width: 50px;
+  padding: 2px;
+  padding-bottom: 7px;
+}
+
+.back_button {
+  text-align: left;
 }
 
 .header {
     text-align: right;
-}
-.page-wrapper {
-    margin: 0 auto;
-    width: 75%;
 }
