@@ -1,0 +1,19 @@
+.content-wrapper {
+    text-align:left;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.content-wrapper p, ul, li {
+    font-weight: 200;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.content-wrapper h2 {
+    font-weight: 900;
+    padding-top: 20px;
+}
+

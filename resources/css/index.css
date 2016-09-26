@@ -43,13 +43,6 @@
   }
 }
 
-/* Limit page width on super large screens */
-@media all and (min-width: 1555px) {
-  .page-wrapper {
-    width: 60%; 
-  }
-
-}
 
 .link-wrapper {
   padding: 50px;
