@@ -3,12 +3,12 @@
     padding-bottom: 50px;
 }
 
-.content-wrapper p, ul, li {
-    font-weight: 200;
+.bold {
+    font-weight: 700;
 }
 
-strong {
-    font-weight: 700;
+.content-wrapper p, ul, li {
+    font-weight: 200;
 }
 
 .content-wrapper h2 {
@@ -16,4 +16,9 @@ strong {
     padding-top: 20px;
 }
 
-
+@media all and (min-width: 1800px) {
+    .content-wrapper {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
