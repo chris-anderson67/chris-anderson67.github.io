@@ -75,6 +75,14 @@ form {
   padding: 2px;
   padding-bottom: 5px;
 }
+@media all and (max-width: 550px) {
+    .back_text {
+        display: none;
+    }
+    #back_button {
+        width: 40px;
+    }
+}
 
 .back_button {
   text-align: left;

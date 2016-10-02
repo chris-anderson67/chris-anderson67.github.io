@@ -16,3 +16,9 @@ p {
         margin-right: 1%;    
     }
 }
+
+@media all and (max-width: 550px) {
+    #back_button {
+        margin-right: 30px;
+    }
+}
