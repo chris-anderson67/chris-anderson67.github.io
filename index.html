@@ -1,52 +1,384 @@
 <!doctype HTML>
 <html>
-
 <head>
+<style> 
+
+@media all and (min-width: 1025px) {
+    #page_title {
+        display: none !important;
+    }
+}
+
+
+.info-card > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+}
+
+#header_card > .mdl-card__title {
+    color: #fff;
+    height: 400px;
+    background: url('/resources/images/portrait_large.jpg') center / cover;
+}
+
+#vote_card > .mdl-card__title {
+    height: 400px;
+    background: url('/resources/images/vote.jpg') center / cover;
+}
+#jumbo_card > .mdl-card__title {
+    height: 400px;
+    background: url('/resources/images/jumbo.jpg') center / cover;
+}
+#easy_card > .mdl-card__title {
+    height: 400px;
+    background: url('/resources/images/easy.jpg') center / cover;
+}
+
+.mdl-grid {
+    max-width: 900px;
+}
+
+.resume-card {
+  height: auto;
+}
+
+h2 {
+  font-weight: 500 !important;
+}
+section {
+  margin-bottom: 16px;
+}
+#resume_content .mdl-grid {
+  max-width: 700px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#github_card > .mdl-card__title {
+  background: url('/resources/images/cat.jpg') center / cover;
+}
+
+#computers_card > .mdl-card__title{
+  background: url('/resources/images/desktop.jpg') center / cover;
+}
+#chinese_card > .mdl-card__title {
+  background: url('/resources/images/chinese.jpg') center / cover;
+}
+
+.page-content {
+  min-height: calc(100vh - 120px);
+}
+footer {
+  height: 50px;
+}
+</style>
+
+
     <title>Chris Anderson</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/base.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
+     <!-- Material Design -->
+    <link rel="stylesheet" href="resources/mdl/material.min.css">
+    <script src="resources/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="resources/node_modules/mfb/src/mfb.css">
+    <link rel="stylesheet" href="resources/css/ionicons.min.css">
+    <script src="resources/node_modules/mfb/src/lib/modernizr.touch.js"></script>
+    <script src="resources/node_modules/mfb/src/mfb.js"></script>
+    <script src="resources/jquery-3.1.1.min.js"></script>
     <meta name="viewport" content="width=device-width; initial-scale=1.0;
     maximum-scale=1.0; user-scalable=0;"/>
 </head>
 <body>
-    <div class="page-wrapper">
-        <div class="header">
-            <h1><a href="index.html">Chris Anderson</a></h1><br>
-            <h2>chrisja67@gmail.com</h2>
-            <hr/>
-        </div>
-        <hr/>
-        <div id="column-wrapper">
-            <div id="left-column">
-                <div class="link-wrapper">
-                <form action="/bio.html">
-                <button class="link_button">
-                    About
-                </button>
-                </form>
-                <br/> 
-                
-                <form action="/resume.html">
-                <button class="link_button">
-                    Resume
-                </button>
-                </form>
-                <br/> 
-                
-                <form action="https://github.com/chris-anderson67">
-                <button class="link_button">
-                    GitHub
-                </button>
-                </form>
-                </div>
-            </div>
-            <div id="right-column">
-                <div class="portrait-wrapper">
-                    <img src="resources/images/portrait.jpg" alt="Portrait"/>
-                </div>
-            </div>
-        </div>
+    <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="resources/Chris_Anderson_Resume.pdf" class="mfb-component__button--main" data-mfb-label="Download PDF Resume">
+          <i class="mfb-component__main-icon--resting ion-document"></i>
+          <i class="mfb-component__main-icon--active ion-arrow-down-a"></i>
+        </a>
+      </li>
+    </ul>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Chris Anderson</span>
     </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a onclick="setFooter()" href="#scroll-tab-1" class="mdl-layout__tab is-active">About</a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab">Projects</a>
+      <a href="#scroll-tab-3" class="mdl-layout__tab">Resume</a>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+      <div class="page-content">
+          <!-- Your content goes here -->
+        <div class="page-content">
+           <!-- start page content --> 
+           <div class="mdl-grid">
+              <div id="header_card" class="mdl-cell mdl-cell--12-col info-card mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Hello, my name is Chris.</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                         I'm a student and software engineer studying in Boston, MA.
+                      </div>
+
+              </div>
+            </div>
+           <div class="mdl-grid">
+              <div id="github_card" class="mdl-cell mdl-cell--4-col info-card mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        I have been working both independantly and
+                        collavoratively on software projects including web and 
+                        mobile apps, some of which are public on GitHub.
+                      </div>
+                       <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/chris-anderson67">
+                          Check them out
+                        </a>
+                      </div>
+              </div>
+              <div id="computers_card" class="mdl-cell mdl-cell--4-col info-card mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        I began enjoying the challenge posed by technical problems
+                        in middle school, when I built my first computer. I have since rebuilt it countless times, overclocked it to it's limit, and have gone on to teach many of my friends how to build their own. 
+                      </div>
+               </div>
+              <div id="chinese_card" class="mdl-cell mdl-cell--4-col info-card mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        My secondary focus is studying Chinese language and 
+                        culture. I have taken classes since first grade,
+                        and have had the opportunity to visit China twice. I hope to
+                        keep improving, and learn more about the origins of the written characters.
+
+                     </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+      <div class="page-content">
+           <div class="mdl-grid">
+              <div id="easy_card" class="mdl-cell mdl-cell--12-col info-card mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">EasyStream: Find and Rate Bathrooms</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                          EasyStream is an Android project undertaken by Melanie Belkin and I at Tufts University.
+                          Both of us are working on the full stack, designing and implementing back-end in PHP using MySQL on Digital Ocean, as well as 
+                          marketing the app through social media, Google, and print-flyers. It is schedueled for a November release on Google Play.
+                      </div>
+                       <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/chris-anderson67/EasyStream">
+                          GitHub
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://easystreamer.wordpress.com">
+                          Dev Blog
+                        </a>
+                      </div>
+              </div>
+            </div>
+           <div class="mdl-grid">
+              <div id="jumbo_card" class="mdl-cell mdl-cell--12-col info-card mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Tufts Admissions App</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        I am currently working in a team of seven people in the JumboCode student organization to produce a
+                        cross-platform app using the Ionic and AngularJS frameworks. I am responsible for implementing
+                        and designing the front-end archatecture, as well as researching and presenting different
+                        options for technologies and design descisions. We expect an early spring 2017 deployment: just in time for visiting accepted students.
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/adityahurry/littlejumboapp">
+                          GitHub
+                        </a>
+                      </div>
+
+              </div>
+            </div>
+           <div class="mdl-grid">
+              <div id="vote_card" class="mdl-cell mdl-cell--12-col info-card mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">http://votepledge.us</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        My personal Python Flask project from March - May 2016, VotePledge allows users to pledge their vote with only
+                        an email. They are confirmed and given information about registration, as well as 
+                        a reminder email closer to voting day. This mimicks real campaigns' use of post cards sent
+                        back to voters, statistically increasing voter turnout.
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/chris-anderson67/VotePledge">
+                          GitHub
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.votepledge.us">Website</a>
+                      </div>
+
+              </div>
+            </div>
+      </div> 
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+      <div id="resume_content" class="page-content">
+        <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col resume-card mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Education</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+              <p><span class="bold">Tufts University</span>,  Medford,  MA – Graduating May 2018<br/>
+              B.S. in Computer Science,  Minor in Chinese – GPA 3.65, Dean's List all semesters<br/> 
+              <p><span class="bold">Breck School</span>,  Minneapolis,  MN,   Graduation: 2014</p>
+              </div>
+              </div> 
+        </div>
+        <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col resume-card mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Skills</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+              <p><span class="bold">Languages</span>:  C,  C++,  Python,  HTML5,  CSS,  JavaScript,  Java,  PHP <br/>
+        <span class="bold">Software</span>:  Git,  Android Studio,  ADB,  Digital Ocean,  Valgrind,  DDD <br/>
+        <span class="bold">Technologies</span>:  AngularJS,  jQuery,  MySQL,  Flask,  SQLite,  MongoDB <br/>
+        <span class="bold">Communication</span>:  Conversational Chinese, Technical Writing, In-Person Technical Support</p>
+              </div>
+              </div> 
+        </div>
+        <div id="courses_card" class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col resume-card mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Courses</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+              <p> Algorithms, Data Structures, Web Programming, Android Mobile Development, <br/>
+         Machine Structure and Assembly Language Programming</p>
+              </div>
+              </div> 
+        </div>
+        <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col resume-card mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Relevant Experience</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+             <span class="bold">JumboCode:</span> Non-profit Tech Consulting, Tufts University<br/>
+        <em>Tufts Admissions App Team Member</em>, September 2016 – April 2017 Deployment
+        <ul>
+        <li>Working with feature-based agile development team using Trello </li>
+        <li>Researching, comparing and presented options for technologies and design</li>
+        <li>Utilizing Ionic and AngularJS to build cross-platform app’s front-end UI and functionality</li>
+        </ul>
+
+        <span class="bold">Tufts University Student Services</span>,  Medford, MA<br/>
+        <em>Computer Support Specialist</em>,  June 2016 – Present<br/>
+        <ul>
+        <li>Provided hands on technical support to five departments and over 150 employees</li>
+        <li>Interfaced with and solve problems for customers on a one-to-one basis</li>
+        </ul>
+
+        <span class="bold">Tufts Dining Services</span>,  Medford, MA<br/>
+        <em>Server</em>,  September 2015 – May 2016<br/>
+              </div>
+              </div> 
+        </div>
+        <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col resume-card mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Projects</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+              <span class="bold">EasyStream App:</span>  Native Android app  –  Deploying Oct. 2016 <br/>
+        <ul>
+        <li>Writing native Android front-end in Java and Android Studio with partner</li>
+        <li>Designing and implementing back-end in PHP using MySQL</li>
+        <li>Marketing App through social media, Google, and print-flyers</li>
+        </ul>
+
+        <span class="bold">Vote Pledge Web App:</span>  Personal project using Python Flask  –  May 2016<br/>
+        <ul>
+        <li>Used SQLite to allow users to “pledge” their vote in a major election</li>
+        </ul>
+
+        <span class="bold">Universal Machine VM:</span>  Pair programmed in C  –  Spring 2016<br/>
+        <ul>
+        <li>Designed, implemented and optimized RISC VM emulator</li>
+        <li>Beat reference machine performance by 4x</li>
+        </ul>
+
+        <span class="bold">Pinball Game:</span>  Python app written as a team  –  Spring 2014<br/>
+        <ul>
+        <li>Implemented rudimentary physics engine on top of PyGame.</li>
+        </ul>
+              </div>
+              </div> 
+        </div>
+        <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col resume-card mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Interests</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+              <p>Intramural Soccer,  Building Computers,  Woodworking,  Playing Trumpet,<br/>
+        Computer Science Exchange member,  JumboCode member, <br/> Chinese Language one-with-one Program  </p>
+              </div>
+              </div> 
+        </div>
+
+      </div>
+    </section>
+    <div class="push"></div>
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo">Contact me:</div>
+      <ul class="mdl-mini-footer__link-list">
+        <li><a href="mailto:chrisja67@gmail.com">chrisja67@gmail.com</a></li>
+        <li><a href="https://github.com/chris-anderson67">GitHub</a></li>
+        <li><a href="https://www.facebook.com/1686505761">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/chris-anderson-387645a3">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+  </main>
+</div>
+    
 </body>
 </html>
+
+<script>
+<!-- //store the content's height and footer in variables -->
+<!-- var contentHeight = $('.page-content').height(), -->
+<!-- footer = $('.mdl-mini-footer'); -->
+<!-- //Check content's height vs window-height -->
+<!-- if (contentHeight < $(window).height()) { -->
+<!--     //add class that puts the footer at the bottom if the check is true -->
+<!--     footer.addClass('bottomstick'); -->
+<!-- } else { -->
+<!--     //remove class that puts the footer at the bottom if the check is false -->
+<!--     footer.removeClass('bottomstick'); -->
+<!-- } -->
+<!-- function setFooter() { -->
+<!--   //store the content's height and footer in variables -->
+<!--   var contentHeight = $('.page-content').height(), -->
+<!--   footer = $('.mdl-mini-footer'); -->
+<!--   //Check content's height vs window-height -->
+<!--   if (contentHeight < $(window).height()) { -->
+<!--       //add class that puts the footer at the bottom if the check is true -->
+<!--       footer.addClass('bottomstick'); -->
+<!--   } else { -->
+<!--       //remove class that puts the footer at the bottom if the check is false -->
+<!--       footer.removeClass('bottomstick'); -->
+<!--   } -->
+<!-- } -->
+</script>
