@@ -4,7 +4,7 @@
       margin-left: 50px !important;
     }
     #center_header {
-      display:none;
+      display:none !important;
     }
 }
 
@@ -98,10 +98,25 @@ footer {
   }
   #center_header {
     margin: 0 auto !important;
+    text-align: center !important;
     padding-top: 50px;
     padding-bottom: -10px;
   }
   .mdl-layout__tab-bar {
     max-width: 100% !important;
+  }
+  .mdl-mini-footer__left-section{
+    padding-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .mdl-mini-footer__left-section .mdl-logo {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .mdl-mini-footer__link-list li{
+    padding-left: 10px; 
+    padding-right: 10px;
   }
 }
