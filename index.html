@@ -3,87 +3,7 @@
 <head>
 <style> 
 
-@media all and (min-width: 1025px) {
-    #page_title {
-        display: none !important;
-    }
-    .mdl-layout__tab-bar {
-      max-width: 330px;
-      margin-left: 50px !important;
-    }
-}
 
-
-.info-card > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-}
-
-#header_card > .mdl-card__title {
-    color: #fff;
-    height: 400px;
-    background: url('/resources/images/portrait_large.jpg') center / cover;
-}
-
-#vote_card > .mdl-card__title {
-    height: 400px;
-    background: url('/resources/images/vote.jpg') center / cover;
-}
-#jumbo_card > .mdl-card__title {
-    height: 400px;
-    background: url('/resources/images/jumbo.jpg') center / cover;
-}
-#easy_card > .mdl-card__title {
-    height: 400px;
-    background: url('/resources/images/easy.jpg') center / cover;
-}
-
-.mdl-grid {
-    max-width: 900px;
-}
-
-.resume-card {
-  height: auto;
-}
-
-.mdl-layout__tab-bar {
-  max-width: 330px;
-}
-
-.mdl-layout__tab {
-  font-size: 97% !important;
-}
-
-h2 {
-  font-weight: 500 !important;
-}
-section {
-  margin-bottom: 16px;
-}
-#resume_content .mdl-grid {
-  max-width: 700px;
-}
-.bold {
-  font-weight: 700;
-}
-
-#github_card > .mdl-card__title {
-  background: url('/resources/images/cat.jpg') center / cover;
-}
-
-#computers_card > .mdl-card__title{
-  background: url('/resources/images/desktop.jpg') center / cover;
-}
-#chinese_card > .mdl-card__title {
-  background: url('/resources/images/chinese.jpg') center / cover;
-}
-
-.page-content {
-  min-height: calc(100vh - 120px);
-}
-footer {
-  height: 50px;
-}
 </style>
 
 
@@ -98,6 +18,7 @@ footer {
     <script src="resources/node_modules/mfb/src/lib/modernizr.touch.js"></script>
     <script src="resources/node_modules/mfb/src/mfb.js"></script>
     <script src="resources/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="resources/css/index.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0;
     maximum-scale=1.0; user-scalable=0;"/>
 </head>
@@ -115,9 +36,10 @@ footer {
     </ul>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
   <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
+<div id="center_header" class="mdl-layout-title">    Chris Anderson
+</div>    <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Chris Anderson</span>
+      <span id="left_header" class="mdl-layout-title">Chris Anderson</span>
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
@@ -369,30 +291,3 @@ footer {
     
 </body>
 </html>
-
-<script>
-<!-- //store the content's height and footer in variables -->
-<!-- var contentHeight = $('.page-content').height(), -->
-<!-- footer = $('.mdl-mini-footer'); -->
-<!-- //Check content's height vs window-height -->
-<!-- if (contentHeight < $(window).height()) { -->
-<!--     //add class that puts the footer at the bottom if the check is true -->
-<!--     footer.addClass('bottomstick'); -->
-<!-- } else { -->
-<!--     //remove class that puts the footer at the bottom if the check is false -->
-<!--     footer.removeClass('bottomstick'); -->
-<!-- } -->
-<!-- function setFooter() { -->
-<!--   //store the content's height and footer in variables -->
-<!--   var contentHeight = $('.page-content').height(), -->
-<!--   footer = $('.mdl-mini-footer'); -->
-<!--   //Check content's height vs window-height -->
-<!--   if (contentHeight < $(window).height()) { -->
-<!--       //add class that puts the footer at the bottom if the check is true -->
-<!--       footer.addClass('bottomstick'); -->
-<!--   } else { -->
-<!--       //remove class that puts the footer at the bottom if the check is false -->
-<!--       footer.removeClass('bottomstick'); -->
-<!--   } -->
-<!-- } -->
-</script>
