@@ -4,12 +4,12 @@
 <style> 
 
 @media all and (min-width: 1025px) {
-    #page_title {
-        display: none !important;
-    }
     .mdl-layout__tab-bar {
       max-width: 330px;
       margin-left: 50px !important;
+    }
+    #center_header {
+      display:none;
     }
 }
 
@@ -46,8 +46,8 @@
   height: auto;
 }
 
-.mdl-layout__tab-bar {
-  max-width: 330px;
+.mdl-layout-title {
+    font-size: 200% !important;
 }
 
 .mdl-layout__tab {
@@ -84,6 +84,19 @@ section {
 footer {
   height: 50px;
 }
+@media all and (max-width: 1024px) {
+  #left_header {
+    display: none !important;
+  }
+  #center_header {
+    margin: 0 auto !important;
+    padding-top: 50px;
+    padding-bottom: -10px;
+  }
+  .mdl-layout__tab-bar {
+    max-width: 100% !important;
+  }
+}
 </style>
 
 
@@ -115,9 +128,10 @@ footer {
     </ul>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
   <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
+<div id="center_header" class="mdl-layout-title">    Chris Anderson
+</div>    <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Chris Anderson</span>
+      <span id="left_header" class="mdl-layout-title">Chris Anderson</span>
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
