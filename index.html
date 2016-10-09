@@ -7,6 +7,10 @@
     #page_title {
         display: none !important;
     }
+    .mdl-layout__tab-bar {
+      max-width: 330px;
+      margin-left: 50px !important;
+    }
 }
 
 
@@ -42,6 +46,14 @@
   height: auto;
 }
 
+.mdl-layout__tab-bar {
+  max-width: 330px;
+}
+
+.mdl-layout__tab {
+  font-size: 97% !important;
+}
+
 h2 {
   font-weight: 500 !important;
 }
@@ -51,7 +63,6 @@ section {
 #resume_content .mdl-grid {
   max-width: 700px;
 }
-
 .bold {
   font-weight: 700;
 }
@@ -90,6 +101,9 @@ footer {
     <meta name="viewport" content="width=device-width; initial-scale=1.0;
     maximum-scale=1.0; user-scalable=0;"/>
 </head>
+
+
+
 <body>
     <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
       <li class="mfb-component__wrap">
@@ -99,7 +113,7 @@ footer {
         </a>
       </li>
     </ul>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
@@ -107,7 +121,7 @@ footer {
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a onclick="setFooter()" href="#scroll-tab-1" class="mdl-layout__tab is-active">About</a>
+      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">About</a>
       <a href="#scroll-tab-2" class="mdl-layout__tab">Projects</a>
       <a href="#scroll-tab-3" class="mdl-layout__tab">Resume</a>
     </div>
