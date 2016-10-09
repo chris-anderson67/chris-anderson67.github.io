@@ -1,69 +1,94 @@
-/* index.css - Personal Website
- * Chris Anderson
- */
-
- .column-wrapper {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 95%;
-  padding-bottom: 20px;
-}
-
-#left-column {
-  text-align: center;
-}
-#left-column h3 {
-  border: 2px; 
-  border-radius: 3px;
-  border-style: solid;
-  border-color: white;
-}
-
-/* render in two columns for wide screens */
-@media all and (min-width: 769px) {
-  button {
-    font-size: 35px;
-  }
-  #page-wrapper {
-    margin-left: 10%;
-    margin-right: 10%;
-
-  }
-  #left-column {
-    float: left;
-    padding: 20px;
-    width: 50%;
-  }
-  #right-column {
-    padding: 20px; 
-    padding-top: 30px;
-    float:left;
-    width: 50%;
-    text-align: center;
-  }
+@media all and (min-width: 1025px) {
+    .mdl-layout__tab-bar {
+      max-width: 330px;
+      margin-left: 50px !important;
+    }
+    #center_header {
+      display:none;
+    }
 }
 
 
-.link-wrapper {
-  padding: 50px;
+.info-card > .mdl-card__title {
+  color: #fff;
+  height: 176px;
 }
 
-/* portrait.jpg responsive */
-.portrait-wrapper {
-  max-width: 90%;
+#header_card > .mdl-card__title {
+    color: #fff;
+    height: 400px;
+    background: url('/resources/images/portrait_large.jpg') center / cover;
+}
+
+#vote_card > .mdl-card__title {
+    height: 400px;
+    background: url('/resources/images/vote.jpg') center / cover;
+}
+#jumbo_card > .mdl-card__title {
+    height: 400px;
+    background: url('/resources/images/jumbo.jpg') center / cover;
+}
+#easy_card > .mdl-card__title {
+    height: 400px;
+    background: url('/resources/images/easy.jpg') center / cover;
+}
+
+.mdl-grid {
+    max-width: 900px;
+}
+
+.resume-card {
   height: auto;
-  position: relative;
-  display: block;
-  margin: 0 auto;
 }
 
-.portrait-wrapper img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  max-width: 95% !important;
-  padding-bottom: 50px;
-  min-height: 50px;
-  height: auto;
-  display: block;
+.mdl-layout-title {
+    font-size: 200% !important;
+}
+
+.mdl-layout__tab {
+  font-size: 97% !important;
+}
+
+h2 {
+  font-weight: 500 !important;
+}
+section {
+  margin-bottom: 16px;
+}
+#resume_content .mdl-grid {
+  max-width: 700px;
+}
+.bold {
+  font-weight: 700;
+}
+
+#github_card > .mdl-card__title {
+  background: url('/resources/images/cat.jpg') center / cover;
+}
+
+#computers_card > .mdl-card__title{
+  background: url('/resources/images/desktop.jpg') center / cover;
+}
+#chinese_card > .mdl-card__title {
+  background: url('/resources/images/chinese.jpg') center / cover;
+}
+
+.page-content {
+  min-height: calc(100vh - 120px);
+}
+footer {
+  height: 50px;
+}
+@media all and (max-width: 1024px) {
+  #left_header {
+    display: none !important;
+  }
+  #center_header {
+    margin: 0 auto !important;
+    padding-top: 50px;
+    padding-bottom: -10px;
+  }
+  .mdl-layout__tab-bar {
+    max-width: 100% !important;
+  }
 }
