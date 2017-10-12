@@ -1,8 +1,3 @@
-# Personal Website
-### Completed:
-    - Index, resume, links
-### Todo:
-    - Replace BIO with real one
-    - update resume periodically
-### Time spent: 
-    - Aprox 13 hours
+Personal Website Version 2
+- Because Material Design Light framework is trash on Safari now for some reason.
+- TODO: get rid of the front end framework I'm using only for buttons -_-
