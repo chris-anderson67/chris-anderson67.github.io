@@ -129,6 +129,9 @@ h3 {
   .container {
     margin-bottom: 100px;
   }
+  .subtitle {
+    text-align: center;
+  }
 }
 
 .subtitle {
@@ -142,5 +145,4 @@ h2 {
 
 .footer-spacing {
   height: 150px;
-  background: #111;
 }
