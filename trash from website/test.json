@@ -1,0 +1,68 @@
+[{"id":"1",
+"bathroom_name":"tish second floor",
+"address":"419 Boston Ave, Medford, MA, 02155",
+"latitude":"45.0",
+"longitude":"72.4",
+"comments":null,
+"active":"1",
+"added_on":null,
+"added_by":"John Smith",
+"updated_on":"2016-10-05 22:03:55",
+"updated_by":null,
+"locked":null,
+"baby_station":null,
+"customers_only":null,
+"rating_avg":null},
+
+{"id":"2",
+"bathroom_name":"Haligan 2nd Floor",
+"address":"6 College Ave, Medford, MA, 02155",
+"latitude":"43.0",
+"longitude":"72.4",
+"comments":null,
+"active":"1",
+"added_on":null,
+"added_by":"John Smithers",
+"updated_on":"2016-10-05 22:06:48",
+"updated_by":null,
+"locked":null,
+"baby_station":null,
+"customers_only":null,
+"rating_avg":null}]
+
+[{"id":"1",
+"bathroom_id":"2",
+"rating":"3.4000000000",
+"cleanliness":"2.5000000000",
+"active":"1",
+"comments":"Great experience overall!",
+"added_on":"2016-10-05 22:13:09",
+"added_by":"Chriss"},
+ 
+ {"id":"2",
+ "bathroom_id":"2",
+"rating":"1.5000000000",
+"cleanliness":"0.5000000000",
+"active":"1",
+"comments":"Horrible experience!",
+"added_on":"2016-10-05 22:14:08",
+"added_by":"Melanie"},
+
+ {"id":"3",
+ "bathroom_id":"1",
+"rating":"1.0000000000",
+"cleanliness":"4.5000000000",
+"active":"1",
+"comments":"Clean but very very dark. I dont' think there were any lights.",
+"added_on":"2016-10-05 22:15:08",
+"added_by":"Blind Mouse #2"}]
+
+
+
+
+
+
+
+
+
+
