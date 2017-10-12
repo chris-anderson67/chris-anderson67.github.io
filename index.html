@@ -1,52 +1,135 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
+    <meta charset="utf-8">
     <title>Chris Anderson</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/base.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;
-    maximum-scale=1.0; user-scalable=0;"/>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    <div class="page-wrapper">
-        <div class="header">
-            <h1><a href="index.html">Chris Anderson</a></h1><br>
-            <h2>chrisja67@gmail.com</h2>
-            <hr/>
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border">CHRIS ANDERSON</span><br>
+        <div class="pure-button-group contact-buttons" role="group">
+            <a class="pure-button button-custom" href="/Chris_Anderson_Resume.pdf">Resume</a>
+            <a class="pure-button button-custom" href="mailto:chrisja67@gmail.com">Email</a>
+            <a class="pure-button button-custom" href="https://github.com/chris-anderson67">GitHub</a>
+            <a class="pure-button button-custom" href="https://www.linkedin.com/in/chris-anderson67/">LinkedIn</a>
+        </div>        
+    </div>
+</div>
+
+<div class="container introduction">
+    <div class="layout">
+        <div class="col col-complementary" role="complementary">
+            <img class="icon-image" src="/images/smile.jpg">
         </div>
-        <hr/>
-        <div id="column-wrapper">
-            <div id="left-column">
-                <div class="link-wrapper">
-                <form action="/bio.html">
-                <button class="link_button">
-                    About
-                </button>
-                </form>
-                <br/> 
-                
-                <form action="/resume.html">
-                <button class="link_button">
-                    Resume
-                </button>
-                </form>
-                <br/> 
-                
-                <form action="https://github.com/chris-anderson67">
-                <button class="link_button">
-                    GitHub
-                </button>
-                </form>
-                </div>
-            </div>
-            <div id="right-column">
-                <div class="portrait-wrapper">
-                    <img src="resources/images/portrait.jpg" alt="Portrait"/>
-                </div>
-            </div>
+        <div class="col col-main" role="main">
+            <h1> Hi! I'm a senior at Tufts University and a software engineer. </h1>
+            <p>
+                I love traveling, history, practicing Chinese, and solving problems by building software. <br>
+                Contact me at <a href="mailto:chrisja67@gmail.com">chrisja67@gmail.com</a> and check out my work below!
+            </p>
         </div>
     </div>
+</div>
+<div class="container">
+    <div class="layout">
+        <div class="col col-complementary" role="complementary">
+            <img class="icon-image" src="/images/punto.png">
+        </div>
+        <div class="col col-main" role="main">
+            <h2><a id="Punto_Urban_Art_Museum_App_18"></a>Punto Urban Art Museum App</h2>
+            <p class="subtitle">Cross-platform React-Native app with Firebase backend and Flask admin interface</p>
+            <p>
+                I'm currently leading a team of 12 building an app to showcase street art in Salem's point neighborhood. I am working with the NSCDC, who has launched a project to bring artists from around the world and paint their affordable housing units, and
+                we are hoping to bring more tuorists to the neighborhood, hopefully starting to bridge the income inequality gap.
+            </p>
+            <a class="pure-button link-button" href="https://www.instagram.com/urban.art.museum/">See the Murals</a>&nbsp;&nbsp;&nbsp;
+            <a class="pure-button link-button" href="https://github.com/jumbocodefall2017/NorthShoreCDC">GitHub</a>&nbsp;&nbsp;&nbsp;
+            <a class="pure-button link-button" href="http://northshorecdc.org/public-art/">About the Initiative</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="layout">
+        <div class="col col-complementary" role="complementary">
+            <img class="icon-image" src="/images/mcent.png">
+        </div>
+        <div class="col col-main" role="main">
+            <h2><a id="Jana_Mobile_11"></a>Jana Mobile</h2>
+            <p class="subtitle">Full Stack Mobile Engineering — Python Flask and Native Android</p>
+            <p>
+                This summer I interned at Jana, where I implemented features in the MCent Browser Android app to increase time-in-app and retention. This Chromium-based browser rewards users with sim-card top-ups as they browse and trigger ad-impressions, addressing high data-prices in India and other developing markets.
+            </p>
+            <p>
+                I built a persistent search feature to bring users back to the app and created a UI and API to select interests for our dynamic and customizable news feed system. I also added internal tools to manage user funds and payouts involving international currencies.
+            </p>
+            <a class="pure-button link-button" href="https://play.google.com/store/apps/details?id=com.mcent.browser">Play Store</a>&nbsp;&nbsp;&nbsp;
+            <a class="pure-button link-button" href="http://www.jana.com/about">About Jana</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="layout">
+        <div class="col col-complementary" role="complementary">
+            <img class="icon-image" src="/images/easystream.jpg">
+        </div>
+        <div class="col col-main" role="main">
+            <h2><a id="EasyStream_24"></a>EasyStream</h2>
+            <p class="subtitle">Native Android app with Firebase Backend</p>
+            <p> EasyStream is an app for finding and rating public restrooms. I wrote the initial version with Melanie Belkin using a MySQl and PHP backend. I have since switched to using firebase to dynamically load from a dataset of over 25,000 entries using GeoFire queries. I've also added search and geolocation functionality. We are continuing to monitor the release using Fabric and Firebase Analytics.
+            </p>
+            <a class="pure-button link-button" href="https://play.google.com/store/apps/details?id=cs.tufts.edu.easystream">Play Store</a>&nbsp;&nbsp;&nbsp;
+            <a class="pure-button link-button" href="https://github.com/chris-anderson67/EasyStream">GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="layout">
+        <div class="col col-complementary" role="complementary">
+            <img class="icon-image" src="/images/admissions.jpg">
+        </div>
+        <div class="col col-main" role="main">
+            <h2><a id="Tufts_Admissions_App_31"></a>Tufts Admissions App</h2>
+            <p class="subtitle">Cross-platform app using the Ionic Framework and NodeJS</p>
+            <p>
+                Last Fall I worked with a team of 8 to build an app allowing Tufts Admissions to 
+                provide visiting students with schedules, locations, and push notification updates for events.
+                I was responsible for building the UI and front-end data management using Ionic and AngularJS.
+                The app saw production starting in April 2017 and downloading it is part of the orientation for 
+                visiting students.
+            </p>
+            <a class="pure-button link-button" href="https://itunes.apple.com/us/app/jumbo-days-app/id1225245170?mt=8">App Store</a>&nbsp;&nbsp;&nbsp;
+            <a class="pure-button link-button" href="https://github.com/adityahurry/littlejumboapp">GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="layout">
+        <div class="col col-complementary" role="complementary">
+            <img class="icon-image" src="/images/king.jpg">
+        </div>
+        <div class="col col-main" role="main">
+            <h2><a id="WebKingz_36"></a>WebKingz</h2>
+            <p class="subtitle">Real-time multiplayer card game using NodeJS, socket.io and phaser.io</p>
+            <p>
+                As the final project for my Web Programming course we built a silly card game to
+                gain experience making a game which persists state accross many users. It also features
+                notifications and an option to add a set of custom rules that everyone playing can see.
+            </p>
+            <a class="pure-button link-button" href="http://webkingz.herokuapp.com">Play the Game</a>&nbsp;&nbsp;&nbsp;
+            <a class="pure-button link-button" href="https://github.com/bennissan/webkingz">GitHub</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div class="footer">
+</div>
 </body>
 </html>
