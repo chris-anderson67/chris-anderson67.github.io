@@ -52,7 +52,6 @@ body, html {
 .bgimg-1 {
   background-image: url("/images/portrait_large.jpg");
   height: 100%;
-  margin-bottom: 50px;
 }
 
 .caption {
@@ -82,10 +81,11 @@ h3 {
 }
 
 .introduction {
-  border: 3px solid #ddd;
-  border-radius: 8px;
-  background: #ddd;
+  border-bottom: 3px solid #ddd;
+  border-top: 3px solid #ddd;
+  background: white;
   margin-bottom: 50px;
+  padding-top: 25px;
 }
 
 .contact-buttons {
