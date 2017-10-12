@@ -140,6 +140,7 @@ h2 {
   color: black;
 }
 
-.footer {
-  height: 50px;
+.footer-spacing {
+  height: 150px;
+  background: #111;
 }
