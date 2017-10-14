@@ -1,44 +1,62 @@
-/* Layout: */
-
-.col-main {
-    flex: 3;  
-}  
-
-.col-complementary {
-    flex: 1;  
-}
-
-/* Styling */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #eeeeee;
-}
-
-.container {
-    max-width: 60em;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 15px;
-}
-
-
-.col {
-    padding: 1em;
-    margin: 0 2px 2px 0;
-}
-
-.icon-image {
-    border-radius: 50%;
-    max-width: 125px;
-    height: auto;
-    border: 3px solid #ddd;
-}
-
+/* Basic Styling */
 body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
+  background: #eeeeee
+}
+
+h2 {
+  color: black;
+}
+
+h3 {
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: -20px;
+  color: black;
+}
+
+.footer-spacing {
+  margin-top: 75px;
+  height: 3px;
+  background: #ddd;
+}
+
+
+/* Layout: */
+.col-main {
+  flex: 3;  
+}  
+
+.col-complementary {
+  flex: 1;  
+}
+
+.container {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+.col {
+  padding: 1em;
+  margin: 0 2px 2px 0;
+}
+
+/* Images */
+.icon-image {
+  border-radius: 50%;
+  max-width: 125px;
+  height: auto;
+  border: 3px solid #ddd;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -54,10 +72,11 @@ body, html {
   height: 100%;
 }
 
+/* Header */
 .caption {
   position: absolute;
   left: 0;
-  top: 70%;
+  top: 72%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -69,15 +88,9 @@ body, html {
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+  padding-left: 28px;
   opacity: 0.85;
   border-radius: 4px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
 }
 
 .introduction {
@@ -88,7 +101,7 @@ h3 {
   padding-top: 25px;
 }
 
-.contact-buttons {
+.contact-buttons-container {
   position: absolute;
   left: 0;
   top: 175%;
@@ -96,19 +109,20 @@ h3 {
   text-align: center;
 }
 
-.button-custom {
-  color: white;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: #111;
-  opacity: 0.85;
+.contact-buttons {
+  margin-left: 6px;
 }
 
 /* Responsive: */
-
 @media only screen and (min-width: 480px) {
-    .layout {
-        display: flex;
-    }
+  .layout {
+    display: flex;
+  }
+  .contact-button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 2px 12px 2px 14px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -132,19 +146,39 @@ h3 {
   .subtitle {
     text-align: center;
   }
+  .contact-button {
+    padding: 2px 12px 2px 12px;
+  }
 }
 
-.subtitle {
-  font-style: italic;
-  margin-top: -20px;
-  color: black;
+/* Custom button */
+.custom-button {
+  text-decoration: none;
+  border: 2px solid #bbb;
+  display: inline-block;
+  padding: 2px 12px 2px 12px;
+  margin: 5px 5px 0px 0px;
+  color: #555;
+  border-radius: 4px;
 }
-h2 {
-  color: black;
-}
-
-.footer-spacing {
-  margin-top: 75px;
-  height: 3px;
+.custom-button:hover {
   background: #ddd;
+}
+.custom-button:active {
+  background: #bbb;
+}
+
+/* Contact button */
+.contact-button {
+  margin: 0px 5px 0px 5px;
+  background: #111;
+  text-decoration: none;
+  border: 2px solid #111;
+  opacity: 0.85;
+  border-radius: 4px;
+  display: inline-block;
+  color: white;
+}
+.contact-button:hover {
+  opacity: 1;
 }
