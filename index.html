@@ -3,29 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Chris Anderson</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="jquery-3.2.1.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<script>
-// https://stackoverflow.com/questions/17733076/smooth-scroll-anchor-links-without-jquery
-function scrollTo(element, to, duration) {
-  if (duration <= 0) return;
-  var difference = to - element.scrollTop;
-  var perTick = difference / duration * 10;
-
-  setTimeout(function() {
-    element.scrollTop = element.scrollTop + perTick;
-    if (element.scrollTop === to) return;
-    scrollTo(element, to, duration - 10);
-  }, 10);
-}
-
-function scrollToIntro() {
-  scrollTo(document.body, document.getElementById("intro").offsetTop, 200);
-}
-</script>
 <body>
-
   <div class="bgimg-1">
     <div class="caption">
       <span class="border">CHRIS ANDERSON</span><br>
@@ -35,7 +18,11 @@ function scrollToIntro() {
       </div>        
     </div>
     <div class="chevron-wrapper">
-      <a onclick="scrollToIntro()"><span class="chevron"></span></a>
+      <a onclick="
+      $('html, body').animate({
+        scrollTop: $('#intro').offset().top
+      }, 500);
+      "><span class="chevron"></span></a>
     </div>
   </div>
   <div id="intro" class="intro-wrapper introduction">

@@ -2,7 +2,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 300 15px/1.8 "Futura", Helvetica, Arial, serif;
   color: #777;
   background: #eeeeee
 }
@@ -13,7 +13,6 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
   color: #111;
 }
 
@@ -102,11 +101,8 @@ h3 {
 }
 
 .contact-buttons-container {
-  position: absolute;
-  left: 0;
-  top: 175%;
-  width: 100%;
   text-align: center;
+  margin-top: 25px;
 }
 
 .chevron-wrapper {
@@ -153,6 +149,10 @@ h3 {
     padding: 2px 12px 2px 14px;
   }
 
+  .caption span.border {
+    font-size: 30px;
+  }
+
   .contact-buttons {
     margin-left: 6px;
   }
@@ -179,10 +179,6 @@ h3 {
 
   .container {
     margin-bottom: 100px;
-  }
-
-  .contact-buttons-container {
-    margin-top: -20px;
   }
 
   .subtitle {
