@@ -1,3 +1,6 @@
 Personal Website Version 2
-- Because Material Design Light framework is trash on Safari now for some reason.
-- TODO: get rid of the front end framework I'm using only for buttons -_-
+
+Redesign:
+- Old version didn't work on safari due to outdated framework
+- Simpler layout to function purely as portfolio
+- Easier to add new items to the project list
